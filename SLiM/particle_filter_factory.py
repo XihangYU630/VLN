@@ -70,6 +70,6 @@ if __name__ == '__main__':
                 x[:, k] = [np.nan, np.nan]
         
         bgm, tau_weight, tau_translation, tau_rotation = view_pose_generation(obj, target)
-        z[k] = view_pose_selection(obj, bgm, tau_weight, tau_translation, tau_rotation, target)
+        z[k] = view_pose_selection(obj, bgm, tau_weight, tau_translation, tau_rotation, target, landmark)
 
 
